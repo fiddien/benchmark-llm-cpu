@@ -1,0 +1,27 @@
+# VLM CPU Benchmark — default configuration
+# Pass to the CLI with:  vlm-bench run --config configs/default.yaml
+
+models:
+  # - moondream3
+  - qwen3-vl
+  # - paligemma2
+  # - qwen2.5-omni   # uncomment when you have sufficient RAM (>8 GB)
+
+tasks:
+  - captioning
+  - vqa
+  - structured_output
+
+data_dir: data
+results_dir: results
+max_new_tokens: 256
+
+# torch.compile — wraps the model with TorchInductor for ~10-30% latency improvement.
+# Requires a C++ compiler (MSVC / MinGW) on Windows for the inductor backend.
+# Use compile_backend: aot_eager if you don't have one (less optimised, no compiler needed).
+compile: false
+compile_backend: inductor
+
+# HF dataset split to use when data/<task>/ contains a HuggingFace dataset
+# (saved with dataset.save_to_disk()).  "test" is the default evaluation split.
+hf_split: test

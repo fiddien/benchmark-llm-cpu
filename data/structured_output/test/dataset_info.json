@@ -1,0 +1,53 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "images": [
+      {
+        "_type": "Image"
+      }
+    ],
+    "messages": [
+      {
+        "content": [
+          {
+            "text": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "type": {
+              "dtype": "string",
+              "_type": "Value"
+            }
+          }
+        ],
+        "role": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      }
+    ],
+    "only_images": [
+      {
+        "content": [
+          {
+            "text": {
+              "dtype": "string",
+              "_type": "Value"
+            },
+            "type": {
+              "dtype": "string",
+              "_type": "Value"
+            }
+          }
+        ],
+        "role": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      }
+    ]
+  },
+  "homepage": "",
+  "license": ""
+}

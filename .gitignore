@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+*.egg
+
+# Results & data (large/generated)
+results/
+data/images/
+data/*/                # HF dataset splits stored under data/<task>/
+*.csv
+*.parquet
+*.arrow
+
+# Models cache (large)
+models_cache/
+*.gguf
+*.bin
+*.safetensors
+
+# Env & secrets
+.env
+*.key
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
